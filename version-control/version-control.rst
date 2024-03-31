@@ -386,11 +386,25 @@ Git常用命令
 
   $ git remote add origin <url>
 
-同步远端仓库内容
+查看项目所有分支包括本地分支、远端仓库分支和已经删除的分支
 
 .. code-block:: bash
 
-  $ git pull
+  $ git branch -a
+
+同步远端仓库内容
+
+.. code-block:: bash
+  
+  $ git pull <remote_repo_name>
+
+  # 相当于
+  $ git fetch <remote_repo_name> <remote_branch>
+  $ git checkout -b <local_branch>    # 习惯上local_branch与remote_branch相同
+  $ git merge <remote_branch>
+
+注：git fetch拉取远端仓库到本地后，可以查看远端分支情况，并在本地新建一个与远端分支名相同的分支。
+git fetch没有执行合并操作，需要手动切换到本地分支下执行git merge。
 
 克隆远端仓库
 
