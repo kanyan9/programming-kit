@@ -108,3 +108,9 @@ Footer
   docs(readme): modify the description of xxx  (#222)
 
 其中#后跟着的数字是对应的issue/pull request ID.
+
+参考文件及扩展阅读
+===================
+AngularJS commit conventions: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit?pli=1
+
+Megengine commit conventions: https://www.megengine.org.cn/doc/stable/zh/development/docs/commit-message.html
