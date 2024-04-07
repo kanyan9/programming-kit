@@ -428,5 +428,3 @@ git fetch没有执行合并操作，需要手动切换到本地分支下执行gi
 ======================
 
 Pro Git：https://git-scm.com/book/en/v2
-
-MIT missing semester：https://github.com/missing-semester/missing-semester/tree/master
