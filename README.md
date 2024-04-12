@@ -1,4 +1,9 @@
 # Programming Kit
+
+<div align=center>
+<img src="logo.jpg"/>
+</div>
+
 Instructions for using common programming tools.
 
 ## Contribution
