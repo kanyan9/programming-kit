@@ -10,7 +10,7 @@
 
 所以编码阶段最重要的目标不是实现复杂的代码逻辑，而是写出清晰易懂的代码，也就是要有好的代码规范。同时现代复杂项目的代码通常是由一个团队共同完成的，提升项目代码质量的首要前提是统一的代码规范。统一优秀的代码规范对程序开发至关重要。
 
-代码规范包括变量命名规范、代码格式和其他一些限制，变量规范有驼峰标识比如“大驼峰”（UpperCamelCase）和“小驼峰”（lowerCamelCase）等，代码格式包括统一缩紧、空格位置、花括号、80列限制等，其他限制包括不能使用某些特定的语法等。在Github等网站可以找到一些开源的代码规范，比较著名的代码规范包括 `Google Code Style`_ 等。
+代码规范包括变量命名规范、代码格式和其他一些限制，变量规范有驼峰标识比如“大驼峰”（UpperCamelCase）和“小驼峰”（lowerCamelCase）等，代码格式包括统一缩紧、空格位置、花括号、80列限制等，其他限制包括不能使用某些特定的语法等。在Github等网站可以找到一些开源的代码规范，比较著名的代码规范包括 `Google Code Style <https://google.github.io/styleguide/cppguide.html>`_ 等。
 
 在编码和团队协作过程中优先制定一份代码规范，并严格遵守提升代码质量。
 
@@ -20,7 +20,7 @@
 
 Cpplint
 -----------------
-Cpplint是一款命令行工具，用于根据Google的C/C++代码规范检查C/C++文件的代码风格问题。Cpplint曾经由Google公司开发和维护，如今Google不再维护cpplint的公开版本，如果想使用公开维护的最新版本cpplint请参考 `Cpplint分支版本 <https://github.com/cpplint/cpplint>`。
+Cpplint是一款命令行工具，用于根据Google的C/C++代码规范检查C/C++文件的代码风格问题。Cpplint曾经由Google公司开发和维护，如今Google不再维护cpplint的公开版本，如果想使用公开维护的最新版本cpplint请参考 `Cpplint分支版本 <https://github.com/cpplint/cpplint>`_ 。
 
 Clang-format
 -----------------
@@ -53,7 +53,7 @@ Clang-format有多个版本可供选择，这里选择15。不同版本所支持
 ~~~~~~~~~~~~
 编辑器可以通过插件的方式使用clang-format，以当前最流行的编辑器Vscode为例，介绍clang-format的使用。
 
-在Vscode中使用clang-format时首先要安装 `Clang-format插件 <https://marketplace.visualstudio.com/items?itemName=xaver.clang-format>` ，安装完成后进行设置，指定编辑器默认使用formatter，同时开启设置中的 autoSave 和 formatOnSave 选项，实现代码修改后的自动格式化保存，设置参考如下：
+在Vscode中使用clang-format时首先要安装 `Clang-format插件 <https://marketplace.visualstudio.com/items?itemName=xaver.clang-format>`_ ，安装完成后进行设置，指定编辑器默认使用formatter，同时开启设置中的 autoSave 和 formatOnSave 选项，实现代码修改后的自动格式化保存，设置参考如下：
 
 .. code-block:: json 
 
@@ -77,7 +77,7 @@ Clang-format有多个版本可供选择，这里选择15。不同版本所支持
 
   $ clang-format -style=google -dump-config > .clang-format
 
-然后根据团队开发规范对生成的 `.clang-format` 文件进行自定义，自定义时文件中各选项代表的含义可参考 `Clang-Format Style Options <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>` 。
+然后根据团队开发规范对生成的 `.clang-format` 文件进行自定义，自定义时文件中各选项代表的含义可参考 `Clang-Format Style Options <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>`_ 。
 
 在编写代码时如果希望某个代码段不要参与格式化，可以使用 `// clang-format off` 和 `// clang-format on` 注释对该代码片段进行修饰。
 
@@ -197,12 +197,6 @@ EditorConfig插件
 
 参考文件和扩展阅读
 ====================
-
-.. _Google Code Style:
-
-Google Code Style：https://google.github.io/styleguide/cppguide.html
-
-.. _Openresty Code Style:
 
 OpenResty C Code Style：https://openresty.org/cn/c-coding-style-guide.html
 
