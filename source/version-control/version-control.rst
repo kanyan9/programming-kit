@@ -15,7 +15,7 @@
 这个问题，诞生了本地版本控制系统，最常用的本地版本控制系统就是保存记录文件修订前后变化内容的补丁，
 形成补丁集。通过相应的补丁就可以计算出某个版本文件内容，如图所示。
 
-.. image:: images/version-control/local-version-control.png
+.. image:: ../_static/version-control/local-version-control.png
   :align: center
 
 集中式版本控制系统
@@ -26,7 +26,7 @@ Systems）。集中式版本控制系统的特点是有一个单一的集中管�
 对所有协作者可见，协作的开发者通过访问这台版本服务器获取最新的文件，或者提交最新修改的文件，如图
 所示。
 
-.. image:: images/version-control/centralized-version-control.png
+.. image:: ../_static/version-control/centralized-version-control.png
   :align: center
 
 集中式版本管理解决了多个开发者协作的问题，但是单一的集中管理的版本服务器存在很高的单点故障风险，
@@ -42,7 +42,7 @@ Systems）。集中式版本控制系统的特点是有一个单一的集中管�
 任何一个镜像出来的本地仓库恢复。 因为每一次的克隆操作，实际上都是一次对代码仓库的完整备份，如图所
 示。
 
-.. image:: images/version-control/distributed-version-control.png
+.. image:: ../_static/version-control/distributed-version-control.png
   :align: center
 
 Git
@@ -97,7 +97,7 @@ Git架构及基本工作流程
 Git架构的几个核心组件包括：本地工作区（Working Directory）、暂存区（Staging Area）、版本库
 （Repository）和远程仓库（Remote Repository），如图所示，下面详细介绍Git核心组件。
 
-.. image:: images/version-control/git-workflow.png
+.. image:: ../_static/version-control/git-workflow.png
   :align: center
   :height: 480
   :width: 500
@@ -129,7 +129,7 @@ Git数据模型
 使用Git做版本管理的本质是保存项目及其所包含的所有文件和文件夹，追踪并记录其变化。为此Git对项目、
 文件夹和文件都做了抽象，将其抽象为commit、tree和blob等数据模型,如图所示。
 
-.. image:: images/version-control/git-data-model.png
+.. image:: ../_static/version-control/git-data-model.png
   :align: center
 
 提交对象（commit）
@@ -213,19 +213,19 @@ HEAD在工作时有三种典型状态：指向master分支，指向其他分支�
 
 指向master表示此时工作分支为master分支，如图所示。
 
-.. image:: images/version-control/head-master.png
+.. image:: ../_static/version-control/head-master.png
   :align: center
 
 指向其他分支表示此时除master分支外还有其他分支，此时工作在其他分支上，如图所示。
 
-.. image:: images/version-control/head-branch.png
+.. image:: ../_static/version-control/head-branch.png
   :align: center
 
 Git中有一种现象叫分离头指针（detached HEAD），一般情况下当我们工作在某个分支上时，例如工作
 在master分支，master指针和HEAD指针是一起前进的，每做一次提交，两个指针就一起向前移动，但当HEAD
 指向了某个具体的commit，master指针和HEAD指针的绑定状态被打破时，就会出现分离头指针，如图所示。
 
-.. image:: images/version-control/detached-head.png
+.. image:: ../_static/version-control/detached-head.png
   :align: center
 
 config

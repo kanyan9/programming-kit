@@ -70,7 +70,7 @@ VMware Workstation和Oracle VirtualBox就是典型的Type-2类虚拟机监控程
 
 容器是相较于虚拟机的一种更为轻量的虚拟化技术，在深入了解容器前先看看容器与虚拟机的对比，如图所示：
 
-.. image:: images/vm-container.png
+.. image:: ../_static/virtual-machine/vm-container.png
   :align: center
   :width: 600
   :height: 300
