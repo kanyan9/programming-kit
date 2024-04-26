@@ -18,6 +18,7 @@ Welcome to programming kit's documentation!
    project-conventions/code-style
    version-control/version-control
    version-control/commit-message-conventions
+   compile/makefiles.rst
    debugging-profiling/debugging-profiling
    debugging-profiling/gdb
 
